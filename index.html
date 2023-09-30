@@ -4,8 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up-form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="side-bar">
+            <img class="background-image" src="trees.jpg" alt="">
+            <div class="logo-container">
+                <img src="test.png" alt="test" class="logo">
+                <h1>hello</h1>
+            </div>
+        </div>
+        <form action="" method="post">
+            <legend>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo molestias similique debitis consectetur nostrum nobis, dolorem deleniti blanditiis cupiditate nihil inventore ab, harum nulla enim.</p>
+                <h1>You know you want to</h1>
+            </legend>
+
+            <fieldset class="data">
+                <div class="input-container">
+                    <label for="f-name">first-name: </label>
+                    <input type="text" name="f-name" id="f-name" required maxlength="20">
+                    <div class="error"></div>
+                </div>
+                <div class="input-container">
+                    <label for="l-name">last-name: </label>
+                    <input type="text" name="l-name" id="l-name" required maxlength="20">
+                    <div class="error"></div>
+                </div>
+                <div class="input-container">
+                    <label for="email">email: </label>
+                    <input type="email" name="email" id="email">
+                    <div class="error"></div>
+                </div>
+                <div class="input-container">
+                    <label for="phone-number">phone-number: </label>
+                    <input type="tel" name="phone-number" id="phone-number" required maxlength="15"> 
+                    <div class="error"></div>
+                </div>
+                <div class="input-container">
+                    <label for="password">password: </label>
+                    <input type="password" name="password" id="password" required maxlength="15">
+                    <div class="error"></div>
+                </div>
+                <div class="input-container">
+                    <label for="confirm-pasword">confirm-pasword: </label>
+                    <input type="password" name="confirm-pasword" id="confirm-pasword" required maxlength="20">
+                    <div class="error"></div>
+                </div>
+            </fieldset>
+
+            <fieldset class="buttons">
+                    <button type="reset">reset</button>
+                    <button type="submit">submit</button>
+            </fieldset>
+            
+        </form>
+    </div>
 </body>
 </html>
